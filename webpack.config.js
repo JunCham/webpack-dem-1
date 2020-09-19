@@ -12,6 +12,7 @@ module.exports = {
   mode: "development",
   module: {
     rules: [
+      ...base.module.rules,
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"], //上面的use用于抽成CSS，这里的use用于提取CSS
